@@ -1,2 +1,12 @@
-# algolabra2025
-Algoritmit ja tekoäly -kurssin harjoitustyön repositorio.
+# Algoritmit ja tekoäly
+
+Algoritmit ja tekoäly -harjoitustyön repositorio keväällä 2025.
+
+### Dokumentaatio:
+
+[Määrittelydokumentti]()
+
+#### Viikkoraportit:
+
+- [Viikkoraportti 1]()
+
