@@ -4,4 +4,6 @@ Tällä viikolla loin alustavan metodin, joka laskee kahden merkkijonon välisen
 
 Tutustuin Damerau-Levenshtein -etäisyyteen tarkemmin ja ymmärrän sen laskemisen paljon paremmin kuin kurssin alussa. En vielä luonut trie-tietorakennetta, eikä ohjelma vielä vertaile käyttäjän syöttämää väärinkirjoitettua sanaa useaan eri sanaan. Tällä hetkellä ohjelma kysyy käyttäjältä kaksi sanaa, joita sitten verrataan toisiinsa.
 
+Lisäksi päivitin määrittelydokumenttiin aika- ja tilavaativuuksista puuttuneet tiedot.
+
 Käytetyt tunnit: 3
