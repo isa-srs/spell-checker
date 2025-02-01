@@ -1,9 +1,17 @@
+import damerau_levenshtein as dl
+
 def main():
     while True:
         typo = input("Syötä väärinkirjoitettu sana: ")
         if typo == "":
             break
-        print(f'Tarkoititko "{typo}"?')
+
+        correct_spelling = input("Syötä oikeinkirjoitettu sana: ")
+
+        distance = dl.damerau_levenshtein(typo, correct_spelling)
+
+        print(f'Sanojen etäisyys on {distance}.')
+        print()
 
 if __name__ == "__main__":
     main()
