@@ -9,4 +9,4 @@ Algoritmit ja tekoäly -harjoitustyön repositorio keväällä 2025.
 #### Viikkoraportit:
 
 - [Viikkoraportti 1](https://github.com/isa-srs/algolabra2025/blob/main/dokumentaatio/viikkoraportit/viikkoraportti_1.md)
-
+- [Viikkoraportti 3](https://github.com/isa-srs/algolabra2025/blob/main/dokumentaatio/viikkoraportit/viikkoraportti_3.md)
