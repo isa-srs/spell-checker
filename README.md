@@ -1,6 +1,6 @@
-# Algoritmit ja tekoäly
+# Spell Checker
 
-Algoritmit ja tekoäly -harjoitustyön repositorio keväällä 2025.
+Spell Checker on kirjoitusvirheiden tarkistustyökalu. Projekti on toteutettu Helsingin yliopiston Algoritmit ja tekoäly -harjoitustyönä keväällä 2025. 
 
 ### Dokumentaatio:
 
