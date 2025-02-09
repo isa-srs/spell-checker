@@ -21,9 +21,8 @@ def damerau_levenshtein(s1, s2):
             d[i][j] = min(d[i][j-1]+1,      # kirjaimen poisto
                           d[i-1][j]+1,      # kirjaimen lisäys
                           d[i-1][j-1]+cost) # kirjaimen vaihto
-
+            # transpoosi / kahden vierekkäisen kirjaimen vaihto:
             if s1[i-1] == s2[j-2] and s1[i-2] == s2[j-1]:
-                d[i][j] = min(d[i][j], d[i-2][j-2]+cost)    # transpoosi / kahden vierekkäisen kirjaimen vaihto
-    
-    return d[l1][l2]
+                d[i][j] = min(d[i][j], d[i-2][j-2]+cost)
 
+    return d[l1][l2]

@@ -1,6 +1,9 @@
 import damerau_levenshtein as dl
 
 def main():
+    """Starts and runs the program.
+    """
+
     while True:
         typo = input("Syötä väärinkirjoitettu sana: ")
         if typo == "":
