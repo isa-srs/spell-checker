@@ -24,11 +24,13 @@ def search_word(root, word):
 
 # test
 root = Node()
-dictionary = ["koira", "kissa", "hiiri"]
-for word in dictionary:
-    insert_word(root, word)
+with open("src/data/sanasto.txt") as f:
+    content = f.read().splitlines()
+    for word in content:
+        insert_word(root, word)
+    
 
-search_words = ["koira", "kala"]
+search_words = ["koira", "kala", "aakkonen"]
 for word in search_words:
     print(f"Sana: {word}")
     if search_word(root, word):
