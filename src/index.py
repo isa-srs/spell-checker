@@ -1,22 +1,24 @@
 import damerau_levenshtein as dl
-import trie
+from trie_manager import TrieManager
 
 def main():
     """Starts and runs the program.
     """
 
+    tm = TrieManager()
+
     print("Ladataan sanastoa...")
-    trie.insert_vocab("src/data/sanasto.txt")
+    tm.insert_vocabulary("src/data/sanasto.txt")
     print("Sanasto ladattu!")
 
     while True:
-        given_word = input("Syötä sana: ")
-        if given_word == "":
+        user_word = input("Syötä sana: ")
+        if user_word == "":
             break
-        elif trie.is_correctly_spelled(given_word):
+        elif tm.search_word(user_word):
             print("Sana on oikein kirjoitettu.")
         else:
-            gd = trie.get_distances(given_word)
+            gd = tm.get_distances(user_word)
             print(f'Tarkoititko {gd[0]}? Sanojen etäisyys on {gd[1]}.')
         print()
 
