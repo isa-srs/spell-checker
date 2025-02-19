@@ -7,3 +7,11 @@ def start(ctx):
 @task
 def lint(ctx):
     ctx.run("pylint src", pty=True)
+
+@task
+def coverage(ctx):
+    ctx.run("coverage run --branch -m pytest src", pty=True)
+
+@task(coverage)
+def coverage_report(ctx):
+    ctx.run("coverage html && xdg-open htmlcov/index.html", pty=True)
