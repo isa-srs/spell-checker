@@ -11,6 +11,8 @@ invoke = "^2.2.0"
 
 [tool.poetry.dev-dependencies]
 pylint = "^3.3.4"
+pytest = "^8.3.4"
+coverage = "^7.6.12"
 
 
 [build-system]
