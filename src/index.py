@@ -1,4 +1,3 @@
-import damerau_levenshtein as dl
 from trie_manager import TrieManager
 
 def main():
