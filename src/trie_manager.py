@@ -10,10 +10,10 @@ class TrieManager:
             content = file.read().splitlines()
             for word in content:
                 self.trie.insert_word(word)
-    
+
     def search_word(self, word):
         return self.trie.search_word(word)
-    
+
     def get_distances(self, typo):
         min_distance = 100
         closest = ""

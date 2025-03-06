@@ -12,5 +12,3 @@ class TestTrieStructure(unittest.TestCase):
 
         self.assertEqual(self.trie.search_word("aakkonen"), True)
         self.assertEqual(self.trie.search_word("apina"), False)
-
-
