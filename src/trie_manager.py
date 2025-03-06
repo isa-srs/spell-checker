@@ -10,7 +10,12 @@ class TrieManager:
             content = file.read().splitlines()
             for word in content:
                 self.trie.insert_word(word)
-
+    
+    def insert_word(self, word, file):
+        with open(file, "a") as file:
+            file.write(word + "\n")
+        self.trie.insert_word(word)
+        
     def search_word(self, word):
         return self.trie.search_word(word)
 
