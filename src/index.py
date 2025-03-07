@@ -3,7 +3,7 @@ from trie_manager import TrieManager
 vocab = "src/data/sanasto.txt"
 user_vocab = "src/data/user_vocabulary.txt"
 
-def instructions():
+def actions():
     print()
     print("TOIMINNOT:")
     print("1: tarkista sanan oikeinkirjoitus")
@@ -28,7 +28,7 @@ def main():
     print("Sanasto ladattu!")
 
     while True:
-        action = instructions()
+        action = actions()
         
         # tarkista sana
         if action == "1":
