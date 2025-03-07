@@ -43,10 +43,10 @@ def main():
         elif action == "2":
             new_word = input("Syötä uusi lisättävä sana: ")
             if tm.search_word(new_word):
-                print(f"Sana '{new_word}' on jo sanastossa.")
+                print(f'Sana "{new_word}" on jo sanastossa.')
             else:
                 tm.insert_word(new_word, user_vocab)
-                print(f"'{new_word}' lisätty onnistuneesti sanastoon!")
+                print(f'Sana "{new_word}" lisätty onnistuneesti sanastoon!')
 
         # poista sana
         elif action == "3" or action == "":
