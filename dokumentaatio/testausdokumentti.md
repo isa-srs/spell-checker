@@ -10,11 +10,16 @@ Testikattavuus 9.3.2025. Tietorakenteita ja algoritmia käsittelevän koodin tes
 
 ## Yksikkö- ja integraatiotestaus
 
-Sovellusta on testattu automaattisilla unittestin yksikkö- ja integraatiotesteillä. 
+Automaattiset yksikkö- ja integraatiotestit on toteutettu unittestillä. 
 
 Testit testaavat pääasiassa trie-tietokannan toimintaa, mutta se on hyvin ytimessä sovelluksen toiminnassa. Testi ```test_get_distances``` testaa ```TrieManagerin``` ja ```damerau_levenshtein```-funktion yhteistoimintaa.
 
 Luokka [TestTrieStructure](../src/trie.py) testaa ```Trie```-oliota, ja luokka [TestTrieManager](../src/tests/trie_manager_test.py) testaa ```TrieManager```-oliota sekä sen kanssakäymistä ```Trie```-olion kanssa.
+
+Sovelluksesta on testattu seuraavia asioita:
+- sanastojen lisääminen trie-tietokantaan onnistuu
+- sanaa ei löydy tietokannasta ennen kuin se on lisätty
+- etäisyysmitta kertoo lähimmän sanan ja etäisyyden siihen
 
 ## Manuaalinen testaus
 
