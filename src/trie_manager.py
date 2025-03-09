@@ -6,23 +6,23 @@ class TrieManager:
         self.trie = Trie()
 
     def insert_vocabulary(self, file):
-        with open(file) as file:
-            content = file.read().splitlines()
+        with open(file, "r", encoding="utf-8") as f:
+            content = f.read().splitlines()
             for word in content:
                 self.trie.insert_word(word)
-    
+
     def insert_word(self, word, file):
-        with open(file, "a") as file:
-            file.write(word + "\n")
+        with open(file, "a", encoding="utf-8") as f:
+            f.write(word + "\n")
         self.trie.insert_word(word)
-        
+
     def search_word(self, word):
         return self.trie.search_word(word)
 
     def get_distances(self, typo):
         min_distance = 100
         closest = ""
-        with open("src/data/sanasto.txt") as f:
+        with open("src/data/sanasto.txt", encoding="utf-8") as f:
             content = f.read().splitlines()
             for word in content:
                 distance = dl.damerau_levenshtein(typo, word)
