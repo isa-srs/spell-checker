@@ -47,6 +47,7 @@ class TrieManager:
 
         Args:
             typo (string): The mistyped word from user
+            files (list): List of files to get words from
 
         Returns:
             tuple: The closest word and its distance from typo
