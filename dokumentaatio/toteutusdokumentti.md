@@ -28,3 +28,4 @@ Käytin ChatGPT:tä kerran tukena Damerau-Levenshtein -etäisyysmitan ymmärtäm
 - [Trie, Wikipedia](https://en.wikipedia.org/wiki/Trie)
 - [Damerau-Levenshtein distance, Wikipedia](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance)
 - [Damerau-Levenshtein distance, GeeksForGeeks](https://www.geeksforgeeks.org/damerau-levenshtein-distance/)
+- [everyfinnishword](https://github.com/hugovk/everyfinnishword)
