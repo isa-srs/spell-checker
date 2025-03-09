@@ -4,7 +4,10 @@ Spell Checker on kirjoitusvirheiden tarkistustyökalu. Projekti on toteutettu He
 
 ### Dokumentaatio:
 
-[Määrittelydokumentti](https://github.com/isa-srs/algolabra2025/blob/main/dokumentaatio/maarittelydokumentti.md)
+- [Määrittelydokumentti](https://github.com/isa-srs/algolabra2025/blob/main/dokumentaatio/maarittelydokumentti.md)
+- [Käyttöohje](https://github.com/isa-srs/spell-checker/blob/main/dokumentaatio/k%C3%A4ytt%C3%B6ohje.md)
+- [Testausdokumentti](https://github.com/isa-srs/spell-checker/blob/main/dokumentaatio/testausdokumentti.md)
+- [Toteutusdokumentti](https://github.com/isa-srs/spell-checker/blob/main/dokumentaatio/toteutusdokumentti.md)
 
 #### Viikkoraportit:
 
