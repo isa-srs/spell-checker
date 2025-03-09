@@ -7,17 +7,18 @@ class TrieManager:
     def __init__(self):
         self.trie = Trie()
 
-    def insert_vocabulary(self, file):
+    def insert_vocabulary(self, files):
         """Inserts a whole vocabulary to the trie structure.
 
         Args:
-            file (string): Path to the vocabulary file
+            files (list): List of paths to the vocabulary files
         """
 
-        with open(file, encoding="utf-8") as f:
-            content = f.read().splitlines()
-            for word in content:
-                self.trie.insert_word(word)
+        for file in files:
+            with open(file, encoding="utf-8") as f:
+                content = f.read().splitlines()
+                for word in content:
+                    self.trie.insert_word(word)
 
     def insert_word(self, word, file):
         """Inserts a single word to the trie structure and to a file.
@@ -26,7 +27,7 @@ class TrieManager:
             word (string): The word to be inserted
             file (string): The name of the file where the word will be added
         """
-        with open(file, encoding="utf-8") as f:
+        with open(file, "a", encoding="utf-8") as f:
             f.write(word + "\n")
         self.trie.insert_word(word)
 
@@ -41,7 +42,7 @@ class TrieManager:
         """
         return self.trie.search_word(word)
 
-    def get_distances(self, typo):
+    def get_distances(self, typo, files):
         """Calls the damerau_levenshtein function and gives it the words to compare.
 
         Args:
@@ -52,11 +53,12 @@ class TrieManager:
         """
         min_distance = 100
         closest = ""
-        with open("src/data/sanasto.txt", encoding="utf-8") as f:
-            content = f.read().splitlines()
-            for word in content:
-                distance = dl.damerau_levenshtein(typo, word)
-                if distance < min_distance:
-                    min_distance = distance
-                    closest = word
+        for file in files:
+            with open(file, encoding="utf-8") as f:
+                content = f.read().splitlines()
+                for word in content:
+                    distance = dl.damerau_levenshtein(typo, word)
+                    if distance < min_distance:
+                        min_distance = distance
+                        closest = word
         return (closest, min_distance)

@@ -1,7 +1,6 @@
 from trie_manager import TrieManager
 
-VOCAB = "src/data/sanasto.txt"
-USER_VOCAB = "src/data/user_vocabulary.txt"
+FILES = ["src/data/sanasto.txt", "src/data/user_vocabulary.txt"]
 
 def actions():
     """Prints out the instructions / actions that the user can do."""
@@ -25,8 +24,7 @@ def main():
     tm = TrieManager()
 
     print("Ladataan sanastoa...")
-    tm.insert_vocabulary(VOCAB)
-    tm.insert_vocabulary(USER_VOCAB)
+    tm.insert_vocabulary(FILES)
     print("Sanasto ladattu!")
 
     while True:
@@ -38,7 +36,7 @@ def main():
             if tm.search_word(user_word):
                 print("Sana on oikein kirjoitettu.")
             else:
-                gd = tm.get_distances(user_word)
+                gd = tm.get_distances(user_word, FILES)
                 print(f'Tarkoititko sanaa "{gd[0]}"? Sanojen etäisyys on {gd[1]}.')
 
         # lisää uusi sana
@@ -47,7 +45,7 @@ def main():
             if tm.search_word(new_word):
                 print(f'Sana "{new_word}" on jo sanastossa.')
             else:
-                tm.insert_word(new_word, USER_VOCAB)
+                tm.insert_word(new_word, FILES[1])
                 print(f'Sana "{new_word}" lisätty onnistuneesti sanastoon!')
 
         # poista sana
