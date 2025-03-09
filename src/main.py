@@ -4,6 +4,8 @@ VOCAB = "src/data/sanasto.txt"
 USER_VOCAB = "src/data/user_vocabulary.txt"
 
 def actions():
+    """Prints out the instructions / actions that the user can do."""
+
     print()
     print("TOIMINNOT:")
     print("1: tarkista sanan oikeinkirjoitus")
