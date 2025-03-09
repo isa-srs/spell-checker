@@ -2,6 +2,10 @@
 
 Spell Checker on kirjoitusvirheiden tarkistustyökalu. Projekti on toteutettu Helsingin yliopiston Algoritmit ja tekoäly -harjoitustyönä keväällä 2025. 
 
+### Pythonista
+
+Sovelluksen käyttö on testattu Pythonin versiolla 3.10, joten vanhempien versioiden kanssa saattaa ilmetä ongelmia.
+
 ### Dokumentaatio:
 
 - [Määrittelydokumentti](https://github.com/isa-srs/algolabra2025/blob/main/dokumentaatio/maarittelydokumentti.md)
